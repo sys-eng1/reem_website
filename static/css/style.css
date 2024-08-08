@@ -336,22 +336,28 @@ button:focus {
 }
 
 /* New CSS for the social icons */
+.home_banner_area .personal_social {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
 .home_banner_area .personal_social li {
   display: inline-block;
-  margin-right: 10px;
 }
 
 .home_banner_area .personal_social li a {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #ccc;
   transition: background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+  color: #fff; /* Ensures icons are white */
+  text-decoration: none; /* Ensures no underline on links */
 }
 
 .home_banner_area .personal_social li a:hover {
@@ -416,9 +422,9 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -moz-linear-gradient(0deg, #024604 0%, #024604 100%);
+  background-image: -webkit-linear-gradient(0deg, #024604 0%, #024604 100%);
+  background-image: -ms-linear-gradient(0deg, #024604 0%, #024604 100%);
   margin-bottom: 120px;
 }
 .banner_area .box_1620 {
@@ -465,7 +471,7 @@ button:focus {
   display: none;
 }
 .banner_area .banner_inner .banner_content .page_link a:hover {
-  color: #766dff;
+  color: #024604;
 }
 
 /* End Home Banner Area css */
@@ -2753,7 +2759,7 @@ h6 {
     border-color: #fff;
     background: #fff; }
     .feature_item:hover i:before {
-      background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+      background: linear-gradient(to right, #024604 0%, #024604 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
