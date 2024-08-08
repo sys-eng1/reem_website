@@ -301,7 +301,6 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  /* Update the background color here */
   background-image: -moz-linear-gradient(0deg, #FFD700 0%, #024604 100%);
   background-image: -webkit-linear-gradient(0deg, #FFD700 0%, #024604 100%);
   background-image: -ms-linear-gradient(0deg, #FFD700 0%, #024604 100%);
@@ -336,19 +335,30 @@ button:focus {
   align-self: center;
 }
 
-/* Add hover effect for social media icons */
-.home_banner_area .banner_inner .banner_content a i.fa-instagram,
-.home_banner_area .banner_inner .banner_content a i.fa-linkedin {
-  background-color: #024604 !important; /* Default background color to green */
-  color: #fff !important; /* Ensure text is white */
+/* New CSS for the social icons */
+.home_banner_area .personal_social li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.home_banner_area .banner_inner .banner_content a:hover i.fa-instagram,
-.home_banner_area .banner_inner .banner_content a:hover i.fa-linkedin {
-  background-color: #024604 !important; /* Keep hover background color green */
-  color: #fff !important; /* Keep icon color white */
+.home_banner_area .personal_social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
+.home_banner_area .personal_social li a:hover {
+  background-color: #024604; /* Hover color */
+}
+
+/* Blog Banner and other styles, unchanged */
 .blog_banner {
   min-height: 780px;
   position: relative;
@@ -459,8 +469,6 @@ button:focus {
 }
 
 /* End Home Banner Area css */
-
-
 
 ============================================================================================ */
 /*---------------------------------------------------- */
