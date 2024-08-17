@@ -1,12 +1,13 @@
-from flask import Flask, render_template
+from http.server import SimpleHTTPRequestHandler, HTTPServer
 
-app = Flask(__name__)
+# Define the port on which you want to run the server
+PORT = 8000
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# Set up a simple HTTP request handler
+handler = SimpleHTTPRequestHandler
 
-# Add routes for other pages if needed
+# Create an HTTP server
+httpd = HTTPServer(('localhost', PORT), handler)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+print(f"Serving on port {PORT}")
+httpd.serve_forever()
