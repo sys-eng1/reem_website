@@ -171,23 +171,16 @@
     function testimonials_slider(){
         if ( $('.testi_slider').length ){
             $('.testi_slider').owlCarousel({
-                loop:true,
+                loop: true,
                 margin: 30,
-                items: 3,
+                items: 1,
                 nav: false,
+                dots: false,
                 autoplay: true,
-                smartSpeed: 1500,
-                dots:true, 
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    768: {
-                        items: 3,
-                    },
-                }
-            })
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000
+            });
         }
     }
     testimonials_slider();
